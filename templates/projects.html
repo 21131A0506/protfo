@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Alex Chen</title>
+    <link rel="icon" type="image/x-icon" href="./static/zoro.ico">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar"></nav>
+
+    <section id="projects" class="pt-20">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project cards will be dynamically loaded from projects.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="./static/js/navigation.js"></script>
+    <script src="./static/js/footer.js"></script>
+    <script src="./static/js/projects.js"></script>
+</body>
+</html>

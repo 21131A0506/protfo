@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Portfolio with Bolt AI - Anukula Mohan Chandra</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/blog-post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar"></nav>
+
+    <article id="blog-post">
+        <div class="container">
+            <div class="post-header">
+                <div class="post-meta">
+                    <span class="date">March 15, 2024</span>
+                    <span class="category">Development</span>
+                    <span class="read-time">10 min read</span>
+                </div>
+                <h1>Creating a Modern Portfolio with Bolt AI and Flask</h1>
+                <div class="author">
+                    <img src="./static/img/my_pic.jpg" alt="Anukula Mohan Chandra">
+                    <div class="author-info">
+                        <span class="name">Anukula Mohan Chandra</span>
+                        <span class="title">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" alt="Development Process" class="featured-image">
+                
+                <section class="content-section">
+                    <h2>Introduction</h2>
+                    <p>In this comprehensive guide, I'll walk you through my journey of creating a modern portfolio website using Bolt AI and deploying it with Flask on PythonAnywhere. This approach combines the power of AI-assisted development with the reliability of Python web frameworks.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Getting Started with Bolt AI</h2>
+                    <p>Bolt AI is a powerful development assistant that helped me scaffold the initial template for my portfolio. Here's how I used it:</p>
+                    <ul class="steps">
+                        <li>Started with a basic project structure request</li>
+                        <li>Specified my design preferences and requirements</li>
+                        <li>Received a complete template with HTML, CSS, and JavaScript files</li>
+                        <li>Made iterative improvements through conversation with Bolt</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Customizing the Template</h2>
+                    <div class="code-block">
+                        <pre><code>from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')</code></pre>
+                    </div>
+                    <p>After getting the initial template, I made several customizations:</p>
+                    <ul>
+                        <li>Adapted the design to match my personal brand</li>
+                        <li>Added Flask routing for dynamic content</li>
+                        <li>Implemented a blog system</li>
+                        <li>Enhanced the responsive design</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Deploying on PythonAnywhere</h2>
+                    <p>The deployment process involved several key steps:</p>
+                    <ol class="deployment-steps">
+                        <li>
+                            <h3>Setting Up PythonAnywhere</h3>
+                            <p>Created a new web app and configured the virtual environment</p>
+                        </li>
+                        <li>
+                            <h3>Uploading Files</h3>
+                            <p>Used Git to push my code to PythonAnywhere's servers</p>
+                        </li>
+                        <li>
+                            <h3>Configuration</h3>
+                            <p>Set up the WSGI file and static file serving</p>
+                        </li>
+                        <li>
+                            <h3>Testing</h3>
+                            <p>Performed thorough testing of all features</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="content-section">
+                    <h2>Conclusion</h2>
+                    <p>This project demonstrates how AI tools like Bolt can accelerate development while maintaining high quality. The combination with Flask and PythonAnywhere provides a robust, scalable solution for portfolio websites.</p>
+                </section>
+
+                <div class="share-section">
+                    <h3>Share this post</h3>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="share-btn facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="footer"></footer>
+
+    <script src="./static/js/navigation.js"></script>
+    <script src="./static/js/footer.js"></script>
+    <script src="./static/js/blog-post.js"></script>
+</body>
+</html>
